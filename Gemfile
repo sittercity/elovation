@@ -12,6 +12,8 @@ gem 'coffee-rails'
 gem 'uglifier'
 gem 'chartkick'
 
+gem 'bulma-rails', '~> 0.4.0'
+
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # This is necessary for running on linux
 gem 'therubyracer', platforms: :ruby

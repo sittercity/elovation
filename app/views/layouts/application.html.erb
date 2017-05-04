@@ -9,22 +9,18 @@
   <%= stylesheet_link_tag "application", media: "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700' rel='stylesheet' type='text/css'>
 
   <%= javascript_include_tag "//www.google.com/jsapi", "chartkick" %>
 </head>
 <body>
-  <div id='container'>
-    <header>
-      <%= link_to root_path, class: "brand" do %>
-        <div class='brand-name'>Elovation</div>
-        <div class='brand-label'>Home</div>
-      <% end %>
-    </header>
-
-    <div id='main'>
-      <%= yield %>
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-left">
+        <%= link_to Elovation, root_path, class: 'nav-item' %>
+      </div>
     </div>
-  </div>
+  </nav>
+
+  <%= yield %>
 </body>
 </html>
